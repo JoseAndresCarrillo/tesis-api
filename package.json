@@ -1,0 +1,31 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production PORT=6601 node index.js",
+    "dev": "cross-env NODE_ENV=development HOST=0.0.0.0 PORT=6601 nodemon --ignore ./storage"
+  },
+  "author": "Jose Andres Carrillo Estrada",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^5.2.0"
+  },
+  "dependencies": {
+    "@koa/cors": "^2.2.2",
+    "bcryptjs": "^2.4.3",
+    "fs-extra": "^7.0.0",
+    "koa": "^2.5.3",
+    "koa-bodyparser": "^4.2.1",
+    "koa-compress": "^3.0.0",
+    "koa-jwt": "^3.5.1",
+    "koa-logger": "^3.2.0",
+    "koa-mount": "^4.0.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "lodash": "^4.17.11",
+    "moment-timezone": "^0.5.21",
+    "mongoose": "^5.3.2"
+  }
+}
